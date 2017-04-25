@@ -1,17 +1,17 @@
 package me.elice.sort;
 
 public class Insertion {
-    public int[] sort(int[] array) {
-        int n = array.length;
+    public int[] sort(int[] arr) {
+        int n = arr.length;
         for (int j = 1; j < n; j++) {
-            int key = array[j];
+            int key = arr[j];
             int i = j - 1;
-            while ((i > -1) && (array[i] > key)) {
-                array[i + 1] = array[i];
+            while ((i > -1) && (arr[i] > key)) {
+                arr[i + 1] = arr[i];
                 i--;
             }
-            array[i + 1] = key;
+            arr[i + 1] = key;
         }
-        return array;
+        return arr;
     }
 }
