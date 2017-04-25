@@ -26,4 +26,15 @@ public class SortTest {
         int[] expected = {1, 2, 3, 4, 5, 6, 9};
         assertArrayEquals(bubble.sort(input), expected);
     }
+
+    @Test
+    public void testSelectionSort() {
+        //given
+        Selection selection = new Selection();
+        //when
+        int[] input =  {1, 6, 2, 3, 4, 9, 5};
+        //then
+        int[] expected = {1, 2, 3, 4, 5, 6, 9};
+        assertArrayEquals(selection.sort(input), expected);
+    }
 }
