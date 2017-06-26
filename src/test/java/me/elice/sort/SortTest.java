@@ -37,4 +37,18 @@ public class SortTest {
         int[] expected = {1, 2, 3, 4, 5, 6, 9};
         assertArrayEquals(selection.sort(input), expected);
     }
+
+    @Test
+    public void testQuickSort(){
+        //given
+        Quick quick = new Quick();
+        //when
+        int[] input =  {1, 6, 2, 3, 4, 9, 5};
+        //then
+        int[] expected = {1, 2, 3, 4, 5, 6, 9};
+        int[] result =  quick.sort(input, 0, input.length-1);
+
+        assertArrayEquals(result, expected);
+
+    }
 }
