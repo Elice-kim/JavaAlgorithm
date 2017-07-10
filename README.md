@@ -1,2 +1,2 @@
 # JavaAlgorithm
-javaAlgorithm
+javaAlgorithm with test code
